@@ -41,7 +41,7 @@ ORDER BY total_deposits DESC;
 
 -- 195 customers are with both savings plans and fund investments
 
-
+---------------------------------------------------------------------------
 -- Verify savings plans for this customer
 SELECT *
 FROM plans_plan
@@ -61,5 +61,7 @@ SELECT SUM(amount) AS check_savings
 
 SELECT SUM(amount) AS check_investments
   FROM plans_plan
-  WHERE owner_id = '2fb594bd456a49a7bdceb70316b2bd74' AND is_a_fund = 1;
+  WHERE owner_id = '0257625a02344b239b41e1cbe60ef080' AND is_a_fund = 1;
 -- should equal total_investments in output : 106379350
+
+
