@@ -39,9 +39,13 @@ FROM users_customuser AS u
   JOIN investments AS i ON u.id = i.owner_id
 ORDER BY total_deposits DESC;
 
+-- code ends here
+
 -- 195 customers are with both savings plans and fund investments
 
 ---------------------------------------------------------------------------
+-- code test
+
 -- Verify savings plans for this customer
 SELECT *
 FROM plans_plan

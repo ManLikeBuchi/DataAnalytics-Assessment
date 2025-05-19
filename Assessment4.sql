@@ -30,10 +30,9 @@ FROM stats
 WHERE tenure_months > 0        -- avoid divide‑by‑zero
   AND total_transactions > 0   -- only customers who transacted
 ORDER BY estimated_clv DESC;
-
+-- code ends here
 ------------------------------------------------
-SELECT date_joined FROM users_customuser WHERE id = 1001;
-SELECT COUNT(*), AVG(confirmed_amount) FROM savings_savingsaccount WHERE owner_id = 1001;
+-- the code below is test
 
 SELECT date_joined
 FROM users_customuser
